@@ -13,6 +13,9 @@ const paySchema = new mongoose.Schema({
   cvvCode: {
     type: String,
   },
+  email:{
+    type:String,
+  },
 });
 const payCollection = new mongoose.model('paymentmodes', paySchema);
 
