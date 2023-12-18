@@ -25,7 +25,7 @@
 ### Confirmation Page
 
 After successful payment, a comfirmation will be shown.
-![success image](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/e9b1ed51-ac8b-4979-9664-47860b4cb2c6)
+![success page](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/9217cb49-54b5-44f8-a31a-9e2b3460ad6a)
 
 IF complete payment function unsuccessfull we will gre failure page
 ![failure image](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/e08609b6-0e22-47eb-91ed-92eb8d486086)
