@@ -3,7 +3,7 @@
 
 1. Registration form
 2. Paymetn page
-3. Confirmation Page with registration Id
+3. Confirmation Page.
 
 
 
@@ -39,7 +39,7 @@ Here we have gone with 2 tables users and paymentmodes.
 ![TABLES with ER DIAGRAMS](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/a9f4f770-8488-4de7-ac8e-a9eca4bee6b3)
 
 
-## Important Assumptions made
+### Important Assumptions made
 
 1. Here you have to register on application form to book a slot and make payment.
 2. Every user have a unique ID which will be used to access the service within slot.
