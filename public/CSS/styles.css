@@ -1,0 +1,24 @@
+/* Add your custom styles here */
+body {
+    background-image: url("../images/yog.gif"); /* Set the path to your background image */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat  ;
+    
+    
+    /* background-position: center; */
+    color: #ffffff; /* Set text color to white */
+}
+
+.jumbotron {
+    background-color: rgba(40, 167, 69, 0.8); /* Set a semi-transparent green background color */
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Set button color to blue */
+    border-color: #007bff;
+}
