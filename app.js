@@ -37,7 +37,8 @@ var initialName;
 var initialAge;
 var initialDate;
 var initialBatch;
-
+var initialexpDate;
+var emailstored;
 const userCollection = require("./models/userModel");
 app.post("/user", async (req, res) => {
   initialName = req.body.name;
@@ -47,7 +48,8 @@ app.post("/user", async (req, res) => {
   console.log(initialName);
 
   const { name, email, phone, age, startDate, batch } = req.body;
-
+  emailstored=req.body.email;
+  console.log(emailstored);
   if (
     !name ||
     !email ||
@@ -66,6 +68,17 @@ app.post("/user", async (req, res) => {
     var month = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
     var year = today.getFullYear();
     const currentDate = month + "/" + day + "/" + year; //month//day//year format
+    
+    const nextMonth = new Date(today);
+    nextMonth.setMonth(today.getMonth() + 1);
+    const firstDateOfNextMonth = new Date(nextMonth.getFullYear(), nextMonth.getMonth(), 1);
+  
+// Format the date in mm/dd/yyyy format
+    const expDate = `${(firstDateOfNextMonth.getMonth() + 1).toString().padStart(2, '0')}/${firstDateOfNextMonth.getDate().toString().padStart(2, '0')}/${firstDateOfNextMonth.getFullYear()}`;
+  
+
+    const expDateprintf = `${firstDateOfNextMonth.getFullYear()}-${(firstDateOfNextMonth.getMonth() + 1).toString().padStart(2, '0')}-${firstDateOfNextMonth.getDate().toString().padStart(2, '0')}`;
+    initialexpDate=expDateprintf;
 
     if (startDate < currentDate) {
       res.status(401).json({
@@ -118,6 +131,7 @@ app.post("/user", async (req, res) => {
             age: age,
             email: email,
             startDate: startDate,
+            expDate: expDateprintf,
             batch: batch,
           });
 
@@ -145,6 +159,7 @@ app.post("/payment", async (req, res) => {
   user.name = initialName;
   console.log(initialBatch);
   user.startDate = initialDate;
+  user.expDate= initialexpDate;
   user.age = initialAge;
   user.batch = initialBatch;
 
@@ -153,7 +168,7 @@ app.post("/payment", async (req, res) => {
     expirationDate: expirationDate,
     cardNo: cardNo,
     cvvCode: cvvCode,
-   
+    email: emailstored,
   });
   
   await paymentDoc.save();
