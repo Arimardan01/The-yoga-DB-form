@@ -25,16 +25,19 @@
 ### Confirmation Page
 
 After successful payment, a comfirmation will be shown.
-
+![unique id generated](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/34c7f1e5-7c14-48ea-a5d7-92ee76810157)
 
 ### Database
 
 After successful payment, user data is stored in the mongodb database.
 Here we have gone with 2 tables users and paymentmodes.
+![image](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/46ff7efc-3ea4-4fd8-a198-35e9ec47984d)
 
 ### ER Diagram for both tables
 
-![ER diagram](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/48d8c363-1237-4950-8453-9882e7f2175f)
+![Database ](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/48d8c363-1237-4950-8453-9882e7f2175f)
+![Tables](https://github.com/Arimardan01/The-yoga-DB-form/assets/132728879/b5c538aa-544a-4c23-90e7-633a869d04f7)
+
 
 
 ## Important Assumptions made
