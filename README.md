@@ -2,7 +2,7 @@
 ### The project is divided into three section
 
 1. Registration form
-2. Paymetn page
+2. Payment page
 3. Confirmation Page.
 
 
