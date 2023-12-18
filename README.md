@@ -49,3 +49,10 @@ Here we have gone with 2 tables users and paymentmodes.
 6. User need to register and make payment again for booking a new slot.
 7. User cannot book more than one time in a month.
 8. The validation is done for the registration page only.
+9. We can integrate a login page to check current date is greaterr than expdate or not and produce output in frontend accordingly/
+
+
+### Instructions to use 
+1. Use git clone for cloning the repo
+2. Run command npm i for installations of dependecies.
+3. Run nodemon app.js for implementation.
